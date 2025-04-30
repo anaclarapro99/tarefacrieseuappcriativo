@@ -1,8 +1,6 @@
 import streamlit as st
 import requests
 import random
-from deep_translator import GoogleTranslator
-
 # Config
 API_KEY = "SUA_CHAVE_API_NINJAS"
 HEADERS = {"X-Api-Key": API_KEY}
@@ -38,5 +36,4 @@ if st.button("🎲 Surpreenda-me!"):
         if st.toggle("Mostrar original"):
             st.markdown(f"**Título Original:** {filme['title']}")
             st.markdown(f"**Descrição Original:** {filme['description']}")
-    else:
-        st.error("Não foi possível buscar o filme.")
+   
